@@ -27,11 +27,19 @@
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 200, 100, 200)];
     
     imageView.image = [UIImage imageNamed:@"1"];
+    imageView.backgroundColor = [UIColor whiteColor];
+//    [imageView.image rightSizeImage:imageView.image andSize:imageView.bounds.size];
     
-    [imageView.image cornerImageWithSize:imageView.bounds.size fillColor:[UIColor redColor] cornerRadius:20 completion:^(UIImage *image) {
+    [imageView.image rightSizeImage:imageView.image andSize:imageView.bounds.size completion:^(UIImage *image) {
        
+        
         imageView.image = image;
     }];
+//    
+//    [imageView.image cornerImageWithSize:imageView.bounds.size fillColor:[UIColor whiteColor] cornerRadius:20 completion:^(UIImage *image) {
+//       
+//        imageView.image = image;
+//    }];
     
     [imageView shakeWithOptions:SCShakeOptionsDirectionHorizontal force:1 duration:1 iterationDuration:1 completionHandler:nil];
     

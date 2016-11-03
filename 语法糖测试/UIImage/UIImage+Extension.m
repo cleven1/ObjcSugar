@@ -13,7 +13,7 @@
 - (UIImage *)rightSizeImage:(UIImage *)image andSize:(CGSize)imgeSize{
     //根据 imageView 的大小，重新调整 image 的大小
     // 使用 CG 重新生成一张和目标尺寸相同的图片
-    UIGraphicsBeginImageContextWithOptions(imgeSize, YES, 0);
+    UIGraphicsBeginImageContextWithOptions(imgeSize, YES, [UIScreen mainScreen].scale);
     // 绘制图像
     [image drawInRect:CGRectMake(0, 0, imgeSize.width, imgeSize.height)];
 
@@ -28,10 +28,16 @@
     
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        UIGraphicsBeginImageContextWithOptions(imgeSize, YES, 0);
+        UIGraphicsBeginImageContextWithOptions(imgeSize, YES, [UIScreen mainScreen].scale);
     
-        [image drawInRect:CGRectMake(0, 0, imgeSize.width, imgeSize.height)];
+        CGRect rect = CGRectMake(0, 0, imgeSize.width, imgeSize.height);
+        UIColor *color = [UIColor whiteColor];
+        [color setFill];
+        UIRectFill(rect);
         
+        
+        [image drawInRect:CGRectMake(0, 0, imgeSize.width, imgeSize.height)];
+    
         UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
         
         UIGraphicsEndImageContext();
@@ -54,7 +60,7 @@
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         
         //        NSTimeInterval start = CACurrentMediaTime();
-        UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+        UIGraphicsBeginImageContextWithOptions(size, YES, [UIScreen mainScreen].scale);
         
         CGRect rect = CGRectMake(0, 0, size.width, size.height);
         
