@@ -17,4 +17,12 @@
 /// @return 1 * 1 图像
 + (nonnull UIImage *)cl_singleDotImageWithColor:(nonnull UIColor *)color;
 
+/**
+ *  水印图片
+ *
+ *  @param bg  背景图片名字
+ *  @param logo logo图片名字
+ *
+ */
++ (nonnull instancetype)waterImageWithBg:(nonnull NSString *)bg logo:(nonnull NSString *)logo;
 @end
