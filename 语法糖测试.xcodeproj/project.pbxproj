@@ -90,6 +90,7 @@
 		DF6BC7711DC8BDC100CF1C64 /* UITextField+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC75D1DC8BDC100CF1C64 /* UITextField+CLObjcSugar.m */; };
 		DF6BC7721DC8BDC100CF1C64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC75F1DC8BDC100CF1C64 /* UITextView+Placeholder.m */; };
 		DF6BC7731DC8BDC100CF1C64 /* UIView+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7611DC8BDC100CF1C64 /* UIView+CLObjcSugar.m */; };
+		DF70FD8B1E0A838D00AC3666 /* NSString+NSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DF70FD8A1E0A838D00AC3666 /* NSString+NSNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -264,6 +265,8 @@
 		DF6BC75F1DC8BDC100CF1C64 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		DF6BC7601DC8BDC100CF1C64 /* UIView+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLObjcSugar.h"; sourceTree = "<group>"; };
 		DF6BC7611DC8BDC100CF1C64 /* UIView+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLObjcSugar.m"; sourceTree = "<group>"; };
+		DF70FD891E0A838D00AC3666 /* NSString+NSNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSNumber.h"; sourceTree = "<group>"; };
+		DF70FD8A1E0A838D00AC3666 /* NSString+NSNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSNumber.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +382,8 @@
 				DF5BF7711DC0AE93009FE851 /* NSString+Trims.m */,
 				DF5BF7721DC0AE93009FE851 /* NSString+UUID.h */,
 				DF5BF7731DC0AE93009FE851 /* NSString+UUID.m */,
+				DF70FD891E0A838D00AC3666 /* NSString+NSNumber.h */,
+				DF70FD8A1E0A838D00AC3666 /* NSString+NSNumber.m */,
 				DF5BF7741DC0AE93009FE851 /* NSStringHeader.h */,
 				DF5BF7751DC0AE93009FE851 /* Pinyin */,
 			);
@@ -778,6 +783,7 @@
 				DF6BC73B1DC8AE3500CF1C64 /* Reachability.m in Sources */,
 				DF5BF7A31DC0B001009FE851 /* UIButton+CountDown.m in Sources */,
 				DF5BF7A81DC0B001009FE851 /* UIButton+Submitting.m in Sources */,
+				DF70FD8B1E0A838D00AC3666 /* NSString+NSNumber.m in Sources */,
 				DF5BF7F71DC0B4E6009FE851 /* UIView+MAC.m in Sources */,
 				DF5BF7B01DC0B0CD009FE851 /* UIImage+Additions.m in Sources */,
 				DF5BF7B11DC0B0CD009FE851 /* UIImage+SuperCompress.m in Sources */,

@@ -16,6 +16,7 @@
 #import "NSString+Trims.h"
 #import "NSString+Emoji.h"
 #import "NSString+HLHanZiToPinYin.h"
+#import "NSString+NSNumber.h"
 
 
 #endif /* NSStringHeader_h */
