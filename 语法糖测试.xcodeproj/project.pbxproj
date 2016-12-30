@@ -91,6 +91,7 @@
 		DF6BC7721DC8BDC100CF1C64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC75F1DC8BDC100CF1C64 /* UITextView+Placeholder.m */; };
 		DF6BC7731DC8BDC100CF1C64 /* UIView+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7611DC8BDC100CF1C64 /* UIView+CLObjcSugar.m */; };
 		DF70FD8B1E0A838D00AC3666 /* NSString+NSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DF70FD8A1E0A838D00AC3666 /* NSString+NSNumber.m */; };
+		DF74CCF21E1612BE000BA075 /* NSFileManager+JKPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74CCF11E1612BE000BA075 /* NSFileManager+JKPaths.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -267,6 +268,8 @@
 		DF6BC7611DC8BDC100CF1C64 /* UIView+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLObjcSugar.m"; sourceTree = "<group>"; };
 		DF70FD891E0A838D00AC3666 /* NSString+NSNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSNumber.h"; sourceTree = "<group>"; };
 		DF70FD8A1E0A838D00AC3666 /* NSString+NSNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSNumber.m"; sourceTree = "<group>"; };
+		DF74CCF01E1612BE000BA075 /* NSFileManager+JKPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+JKPaths.h"; sourceTree = "<group>"; };
+		DF74CCF11E1612BE000BA075 /* NSFileManager+JKPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+JKPaths.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +302,7 @@
 		DF5BF6FC1DC0A6FA009FE851 /* 语法糖测试 */ = {
 			isa = PBXGroup;
 			children = (
+				DF74CCEF1E1612BE000BA075 /* NSFileManager */,
 				DF6BC73C1DC8BDC100CF1C64 /* ObjcSugar */,
 				DF6BC7381DC8AE2C00CF1C64 /* Reachability */,
 				DF6BC7341DC8AD7300CF1C64 /* UINavigationBar */,
@@ -635,6 +639,15 @@
 			path = ObjcSugar;
 			sourceTree = "<group>";
 		};
+		DF74CCEF1E1612BE000BA075 /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF74CCF01E1612BE000BA075 /* NSFileManager+JKPaths.h */,
+				DF74CCF11E1612BE000BA075 /* NSFileManager+JKPaths.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -708,6 +721,7 @@
 			files = (
 				DF5BF8111DC0B5E0009FE851 /* GCDTimer.m in Sources */,
 				DF5BF7F91DC0B4E6009FE851 /* UIView+RecursiveDescription.m in Sources */,
+				DF74CCF21E1612BE000BA075 /* NSFileManager+JKPaths.m in Sources */,
 				DF5BF7F21DC0B4E5009FE851 /* UIView+BlockGesture.m in Sources */,
 				DF5BF77A1DC0AE93009FE851 /* NSString+Emoji.m in Sources */,
 				DF6BC76E1DC8BDC100CF1C64 /* UILabel+CLObjcSugar.m in Sources */,
