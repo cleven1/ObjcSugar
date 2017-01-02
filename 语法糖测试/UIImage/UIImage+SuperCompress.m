@@ -48,36 +48,37 @@
     return newImage;
 }
 
-+ (CGSize) scaleImage:(UIImage *) image withLength:(CGFloat) imageLength{
+/**
+ * @breif 等比例缩放
+ */
+-(UIImage*)scaleImage:(UIImage *)image ToSize:(CGSize)size
+{
+    CGFloat width = CGImageGetWidth(image.CGImage);
+    CGFloat height = CGImageGetHeight(image.CGImage);
     
-    CGFloat newWidth = 0.0f;
-    CGFloat newHeight = 0.0f;
-    CGFloat width = image.size.width;
-    CGFloat height = image.size.height;
+    float verticalRadio = size.height*1.0/height;
+    float horizontalRadio = size.width*1.0/width;
     
-    if (width > imageLength || height > imageLength){
-        
-        if (width > height) {
-            
-            newWidth = imageLength;
-            newHeight = newWidth * height / width;
-            
-        }else if(height > width){
-            
-            newHeight = imageLength;
-            newWidth = newHeight * width / height;
-            
-        }else{
-            
-            newWidth = imageLength;
-            newHeight = imageLength;
-        }
-        
+    float radio = 1;
+    if(verticalRadio>1 && horizontalRadio>1){
+        radio = verticalRadio > horizontalRadio ? horizontalRadio : verticalRadio;
     }else{
-        return CGSizeMake(width, height);
+        radio = verticalRadio < horizontalRadio ? verticalRadio : horizontalRadio;
     }
     
-    return CGSizeMake(newWidth, newHeight);
+    width = width*radio;
+    height = height*radio;
+    
+    int xPos = (size.width - width)/2;
+    int yPos = (size.height-height)/2;
+    
+    // 创建一个bitmap的context
+    UIGraphicsBeginImageContext(size);
+    [image drawInRect:CGRectMake(xPos, yPos, width, height)];
+    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return scaledImage;
 }
 
 @end

@@ -31,15 +31,17 @@
  */
 + (UIImage *)resizeImage:(UIImage *) image withNewSize:(CGSize) newSize;
 
+
+
 /**
- *  通过指定图片最长边，获得等比例的图片size
- *
- *  @param image       原始图片
- *  @param imageLength 图片允许的最长宽度（高度）
- *
- *  @return 获得等比例的size
+ 等比例缩放
+
+ @param image 原始图片
+ @param size  size
+
+ @return 调整后的图片
  */
-+ (CGSize)scaleImage:(UIImage *) image withLength:(CGFloat) imageLength;
+-(UIImage*)scaleImage:(UIImage *)image ToSize:(CGSize)size;
 
 ///对指定图片进行拉伸
 + (UIImage*)resizableImage:(NSString *)name;
