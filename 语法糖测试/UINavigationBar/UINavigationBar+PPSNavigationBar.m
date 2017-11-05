@@ -17,6 +17,7 @@
 -(void)pps_setScrollViewAlpha:(CGFloat)alpha{
     [[self valueForKey:@"_leftViews"] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger i, BOOL *stop) {
         view.alpha = alpha;
+        
     }];
     
     [[self valueForKey:@"_rightViews"] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger i, BOOL *stop) {

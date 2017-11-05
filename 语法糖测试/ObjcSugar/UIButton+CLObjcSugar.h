@@ -36,6 +36,15 @@
 /// @return UIButton
 + (nonnull instancetype)cl_buttonWithImageName:(nullable NSString *)imageName
                                highlightSuffix:(nullable NSString *)highlightSuffix;
+///  实例化Button
+///
+///  @param title     title
+///  @param fontSize  fontSize
+///  @param textColor textColor
+///  @param imageName ImageName
+///
+///  @return UIButton
++ (nonnull instancetype)cl_buttonWithTitle:(nullable NSString *)title fontSize:(CGFloat)fontSize textColor:(nonnull UIColor *)textColor Image:(nullable NSString *)imageName;
 
 /// 实例化 UIButton
 ///
@@ -60,10 +69,11 @@
 /// @return UIButton
 + (nonnull instancetype)cl_buttonWithTitle:(nullable NSString *)title
                                   fontSize:(CGFloat)fontSize
-                                 textColor:(nonnull UIColor *)textColor
+                                 textColor:(nullable UIColor *)textColor
                                  imageName:(nullable NSString *)imageName
                              backImageName:(nullable NSString *)backImageName
                            highlightSuffix:(nullable NSString *)highlightSuffix;
+
 
 /// 实例化 UIButton
 ///

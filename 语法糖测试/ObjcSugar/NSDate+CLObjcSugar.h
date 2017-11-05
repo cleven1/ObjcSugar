@@ -151,14 +151,14 @@
  *  @param anotherDate The another date to compare as NSDate
  *  @return Return YES if is same day, NO if not
  */
-- (BOOL)isSameDay:(NSDate *)anotherDate;
+- (BOOL)IsSameDay:(NSDate *)anotherDate;
 
 /**
  *  是否是今天
  *
  *  @return Return if self is today
  */
-- (BOOL)isToday;
+- (BOOL)IsToday;
 
 /**
  *  Add days to self

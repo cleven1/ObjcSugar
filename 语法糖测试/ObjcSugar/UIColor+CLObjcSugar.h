@@ -18,6 +18,13 @@
 /// @return UIColor
 + (nonnull instancetype)cl_colorWithHex:(u_int32_t)hex;
 
+/// 使用十六进制字符串生成颜色
+///
+/// @param hexString，格式 #FFEEDD
+/// @param alpha，格式 float
+/// @return UIColor
++ (nonnull instancetype)cl_colorWithHexString:(nonnull NSString *)hexString alpha:(CGFloat)alpha;
+
 /// 使用指定的 r / g / b 数值生成颜色
 ///
 /// @param red   red
@@ -26,6 +33,7 @@
 ///
 /// @return UIColor
 + (nonnull instancetype)cl_colorWithRed:(u_int8_t)red green:(u_int8_t)green blue:(u_int8_t)blue;
++ (nonnull instancetype)cl_colorWithRed:(u_int8_t)red green:(u_int8_t)green blue:(u_int8_t)blue alpha:(CGFloat)alpha;
 
 /// 生成随机颜色
 ///

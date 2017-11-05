@@ -11,6 +11,8 @@
 @interface UINavigationController (CLObjcSugar)
 
 /// 自定义全屏拖拽返回手势
-@property (nonatomic, strong, readonly) UIPanGestureRecognizer *cl_popGestureRecognizer;
+@property (nonatomic, strong) UIPanGestureRecognizer *cl_popGestureRecognizer;
+
+
 
 @end

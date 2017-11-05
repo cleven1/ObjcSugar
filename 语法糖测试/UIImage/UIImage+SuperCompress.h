@@ -12,28 +12,6 @@
 
 @interface UIImage (SuperCompress)
 /**
- *  压缩上传图片到指定字节
- *
- *  @param image     压缩的图片
- *  @param maxLength 压缩后最大字节大小
- *
- *  @return 压缩后图片的二进制
- */
-+ (NSData *)compressImage:(UIImage *)image toMaxLength:(NSInteger) maxLength maxWidth:(NSInteger)maxWidth;
-
-/**
- *  获得指定size的图片
- *
- *  @param image   原始图片
- *  @param newSize 指定的size
- *
- *  @return 调整后的图片
- */
-+ (UIImage *)resizeImage:(UIImage *) image withNewSize:(CGSize) newSize;
-
-
-
-/**
  等比例缩放
 
  @param image 原始图片
@@ -41,7 +19,7 @@
 
  @return 调整后的图片
  */
--(UIImage*)scaleImage:(UIImage *)image ToSize:(CGSize)size;
++(UIImage*)scaleImage:(UIImage *)image ToSize:(CGSize)size;
 
 ///对指定图片进行拉伸
 + (UIImage*)resizableImage:(NSString *)name;

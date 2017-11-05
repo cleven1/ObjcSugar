@@ -14,6 +14,10 @@
     return [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
 }
 
++ (NSString *)cl_currentDisplayName {
+    return [NSBundle mainBundle].infoDictionary[@"CFBundleDisplayName"];
+}
+
 + (UIImage *)cl_launchImage {
     
     NSArray *launchImages = [NSBundle mainBundle].infoDictionary[@"UILaunchImages"];

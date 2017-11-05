@@ -25,4 +25,13 @@
  *
  */
 + (nonnull instancetype)waterImageWithBg:(nonnull NSString *)bg logo:(nonnull NSString *)logo;
+
+/**
+ *  重新绘制图片
+ *
+ *  @param color 填充色
+ *
+ *  @return UIImage
+ */
+- (nonnull UIImage *)imageWithColor:(nonnull UIColor *)color;
 @end

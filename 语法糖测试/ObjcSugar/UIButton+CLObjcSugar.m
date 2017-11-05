@@ -28,6 +28,17 @@
     return [self cl_buttonWithAttributedText:nil imageName:imageName backImageName:nil highlightSuffix:highlightSuffix];
 }
 
++ (instancetype)cl_buttonWithTitle:(NSString *)title fontSize:(CGFloat)fontSize textColor:(nonnull UIColor *)textColor Image:(NSString *)imageName
+{
+    NSAttributedString *attributedText = [[NSAttributedString alloc]
+                                          initWithString:title
+                                          attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:fontSize],
+                                                       NSForegroundColorAttributeName: textColor}];
+    
+    return [self cl_buttonWithAttributedText:attributedText imageName:imageName backImageName:nil highlightSuffix:nil];
+    
+}
+
 + (instancetype)cl_buttonWithImageName:(NSString *)imageName backImageName:(NSString *)backImageName highlightSuffix:(NSString *)highlightSuffix {
     
     return [self cl_buttonWithAttributedText:nil imageName:imageName backImageName:backImageName highlightSuffix:highlightSuffix];
@@ -52,15 +63,20 @@
     if (imageName != nil) {
         [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         
-        NSString *highlightedImageName = [imageName stringByAppendingString:highlightSuffix];
-        [button setImage:[UIImage imageNamed:highlightedImageName] forState:UIControlStateHighlighted];
+        if (highlightSuffix != nil) {
+            
+            NSString *highlightedImageName = [imageName stringByAppendingString:highlightSuffix];
+            [button setImage:[UIImage imageNamed:highlightedImageName] forState:UIControlStateHighlighted];
+        }
     }
     
     if (backImageName != nil) {
         [button setBackgroundImage:[UIImage imageNamed:backImageName] forState:UIControlStateNormal];
-        
-        NSString *highlightedImageName = [backImageName stringByAppendingString:highlightSuffix];
-        [button setBackgroundImage:[UIImage imageNamed:highlightedImageName] forState:UIControlStateHighlighted];
+        if (highlightSuffix) {
+            
+            NSString *highlightedImageName = [backImageName stringByAppendingString:highlightSuffix];
+            [button setBackgroundImage:[UIImage imageNamed:highlightedImageName] forState:UIControlStateHighlighted];
+        }
     }
     
     [button sizeToFit];

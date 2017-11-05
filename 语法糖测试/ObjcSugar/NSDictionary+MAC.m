@@ -71,6 +71,39 @@
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     return jsonString;
 }
+
+
+//字符串转字典
++ (NSDictionary *)cl_dictionaryWithJsonString:(NSString *)jsonString
+{
+    if (jsonString == nil) {
+        
+        return nil;
+        
+    }
+    
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *err;
+    
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
+                         
+                                                        options:NSJSONReadingMutableContainers
+                         
+                                                          error:&err];  
+    
+    if(err) {  
+        
+        NSLog(@"json解析失败：%@",err);  
+        
+        return nil;  
+        
+    }  
+    
+    return dic;  
+    
+}
+
 /**
  *  @brief  将NSDictionary转换成XML 字符串
  *

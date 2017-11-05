@@ -45,8 +45,15 @@
     
     [self.view addSubview:imageView];
 
+    
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
+    [LocalPushCenter registerLocalNotification:3];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

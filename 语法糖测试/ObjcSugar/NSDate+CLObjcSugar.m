@@ -301,23 +301,22 @@
     return @"";
 }
 
-- (BOOL)isSameDay:(NSDate *)anotherDate {
+- (BOOL)IsSameDay:(NSDate *)anotherDate {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *components1 = [calendar components:(NSCalendarUnitYear
-                                                          | NSCalendarUnitMonth
+    NSDateComponents *components1 = [calendar components:(
+                                                           NSCalendarUnitMonth
                                                           | NSCalendarUnitDay)
                                                 fromDate:self];
-    NSDateComponents *components2 = [calendar components:(NSCalendarUnitYear
-                                                          | NSCalendarUnitMonth
+    NSDateComponents *components2 = [calendar components:(
+                                                           NSCalendarUnitMonth
                                                           | NSCalendarUnitDay)
                                                 fromDate:anotherDate];
-    return ([components1 year] == [components2 year]
-            && [components1 month] == [components2 month]
+    return ([components1 month] == [components2 month]
             && [components1 day] == [components2 day]);
 }
 
-- (BOOL)isToday {
-    return [self isSameDay:[NSDate date]];
+- (BOOL)IsToday {
+    return [self IsSameDay:[NSDate date]];
 }
 
 - (NSDate *)dateByAddingDays:(NSUInteger)days {
@@ -487,13 +486,13 @@
     if (time < 3600) { // 小于一小时
         retTime = time / 60;
         retTime = retTime <= 0.0 ? 1.0 : retTime;
-        return [NSString stringWithFormat:@"%.0f分钟前", retTime];
+        return [NSString stringWithFormat:@"%.0f%@", retTime,NSLocalizedString(@"minutesago", nil)];//分钟前
     } else if (time < 3600 * 24) { // 小于一天，也就是今天
         retTime = time / 3600;
         retTime = retTime <= 0.0 ? 1.0 : retTime;
-        return [NSString stringWithFormat:@"%.0f小时前", retTime];
+        return [NSString stringWithFormat:@"%.0f%@", retTime,NSLocalizedString(@"hourago", nil)];//小时前
     } else if (time < 3600 * 24 * 2) {
-        return @"昨天";
+        return NSLocalizedString(@"yesterday", nil);//@"昨天";
     }
     // 第一个条件是同年，且相隔时间在一个月内
     // 第二个条件是隔年，对于隔年，只能是去年12月与今年1月这种情况
@@ -514,26 +513,26 @@
             retDay = (int)[curDate day] + (totalDays - (int)[date day]);
         }
         
-        return [NSString stringWithFormat:@"%d天前", (abs)(retDay)];
+        return [NSString stringWithFormat:@"%d%@", (abs)(retDay),NSLocalizedString(@"dayago", nil)];//天前
     } else  {
         if (abs(year) <= 1) {
             if (year == 0) { // 同年
-                return [NSString stringWithFormat:@"%d个月前", abs(month)];
+                return [NSString stringWithFormat:@"%d%@", abs(month),NSLocalizedString(@"monthsago", nil)];//个月前
             }
             
             // 隔年
             int month = (int)[curDate month];
             int preMonth = (int)[date month];
             if (month == 12 && preMonth == 12) {// 隔年，但同月，就作为满一年来计算
-                return @"1年前";
+                return [NSString stringWithFormat:@"1%@",NSLocalizedString(@"yearsago", nil)];//@"1年前";
             }
-            return [NSString stringWithFormat:@"%d个月前", (abs)(12 - preMonth + month)];
+            return [NSString stringWithFormat:@"%d%@", (abs)(12 - preMonth + month),NSLocalizedString(@"monthsago", nil)];//个月前
         }
         
-        return [NSString stringWithFormat:@"%d年前", abs(year)];
+        return [NSString stringWithFormat:@"%d%@", abs(year),NSLocalizedString(@"yearsago", nil)];//年前
     }
     
-    return @"1小时前";
+    return [NSString stringWithFormat:@"1%@",NSLocalizedString(@"hoursbefore", nil)];//@"1小时前";
 }
 
 - (NSString *)ymdFormat {

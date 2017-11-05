@@ -23,11 +23,19 @@
  */
 - (NSString *)urlQueryString;
 /**
- *  @brief NSDictionary转换成JSON字符串
+ *  @brief 字典 转换成 JSON字符串
  *
  *  @return  JSON字符串
  */
 -(NSString *)cl_JSONString;
+
+///  字符串转字典
+///
+///  @param jsonString 字符串
+///
+///  @return 字典
++ (NSDictionary *)cl_dictionaryWithJsonString:(NSString *)jsonString;
+
 /**
  *  @brief  将NSDictionary转换成XML 字符串
  *

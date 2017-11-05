@@ -19,39 +19,10 @@
 }
 
 
-+ (NSData *)compressImage:(UIImage *)image toMaxLength:(NSInteger)maxLength maxWidth:(NSInteger)maxWidth{
-    NSAssert(maxLength > 0, @"图片的大小必须大于 0");
-    NSAssert(maxWidth > 0, @"图片的最大边长必须大于 0");
-    
-    CGSize newSize = [self scaleImage:image withLength:maxWidth];
-    UIImage *newImage = [self resizeImage:image withNewSize:newSize];
-    
-    CGFloat compress = 0.9f;
-    NSData *data = UIImageJPEGRepresentation(newImage, compress);
-    
-    while (data.length > maxLength && compress > 0.01) {
-        compress -= 0.02f;
-        
-        data = UIImageJPEGRepresentation(newImage, compress);
-    }
-    return data;
-}
-
-+ (UIImage *) resizeImage:(UIImage *) image withNewSize:(CGSize) newSize{
-    
-    UIGraphicsBeginImageContext(newSize);
-    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return newImage;
-}
-
 /**
  * @breif 等比例缩放
  */
--(UIImage*)scaleImage:(UIImage *)image ToSize:(CGSize)size
++(UIImage*)scaleImage:(UIImage *)image ToSize:(CGSize)size
 {
     CGFloat width = CGImageGetWidth(image.CGImage);
     CGFloat height = CGImageGetHeight(image.CGImage);

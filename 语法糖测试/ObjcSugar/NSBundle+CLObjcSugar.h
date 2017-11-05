@@ -16,7 +16,10 @@
 /// 与当前屏幕尺寸匹配的启动图像
 + (nullable UIImage *)cl_launchImage;
 
-
+/**
+ 项目名称
+ */
++ (nullable NSString *)cl_currentDisplayName;
 
 ///  appicon路径
 - (nullable NSString *)cl_appIconPath;

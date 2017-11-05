@@ -3,21 +3,11 @@
 
 @interface LocalPushCenter : NSObject
 
-+ (NSDate *)fireDateWithWeek:(NSInteger)week
-                        hour:(NSInteger)hour
-                      minute:(NSInteger)minute
-                      second:(NSInteger)second;
+#pragma mark - 在AppDelegate中注册
++(void)registerLocalNotificationInAppDelegate;
 
-//本地发送推送（先取消上一个 再push现在的）
-+ (void)localPushForDate:(NSDate *)fireDate
-                  forKey:(NSString *)key
-               alertBody:(NSString *)alertBody
-             alertAction:(NSString *)alertAction
-               soundName:(NSString *)soundName
-             launchImage:(NSString *)launchImage
-                userInfo:(NSDictionary *)userInfo
-              badgeCount:(NSUInteger)badgeCount
-          repeatInterval:(NSCalendarUnit)repeatInterval;
+#pragma mark - 注册本地通知
++ (void)registerLocalNotification:(NSInteger)alertTime;
 
 #pragma mark - 退出
 + (void)cancelAllLocalPhsh;

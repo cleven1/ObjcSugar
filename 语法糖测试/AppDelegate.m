@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LocalPushCenter.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,48 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //注册推送
+    [LocalPushCenter registerLocalNotificationInAppDelegate];
+    
+    
     return YES;
+}
+#pragma mark - 收到推送
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    //点击推送进入
+    NSLog(@"%@",notification);
+    
+    
+    //在应用类接收到推送
+    if (application.applicationState == UIApplicationStateActive) {
+        
+        NSString *content = [notification.userInfo objectForKey:@"content"];
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"本地推送" message:content preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alertController addAction:alertAction];
+        
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+        
+        
+    }
+    
+    
+    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badge --;
+    badge = badge >= 0? badge: 0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    NSArray *localNotification = [UIApplication sharedApplication].scheduledLocalNotifications;
+    for (UILocalNotification *notification in localNotification) {
+        
+        [[UIApplication sharedApplication] cancelLocalNotification:notification];
+    }
+    
+    
+    
 }
 
 
