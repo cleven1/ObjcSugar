@@ -16,7 +16,7 @@ _Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
 Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
-/*
+
 @interface UIImage (CLStatusbarIconColor)
 
 - (UIImage *)cl_imageWithColor:(UIColor *)color;
@@ -81,9 +81,9 @@ UIColor* cl_tintColor(id self, SEL _cmd) {
                                            );
     
 }
-*/
+
 @implementation CLStatusBar
-/*
+
 +(void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -121,14 +121,12 @@ UIColor* cl_tintColor(id self, SEL _cmd) {
     objc_setAssociatedObject([self class], @"cl_statusbarIconColor", color, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [[UIApplication sharedApplication].keyWindow.rootViewController setNeedsStatusBarAppearanceUpdate];
 }
-*/
+
 
 #pragma mark - status hiden
 + (void)setStatusBarHidden:(BOOL)hidden {
-//    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
-//    statusBar.hidden = hidden;
-    
-    [[UIApplication sharedApplication] setStatusBarHidden:hidden withAnimation:UIStatusBarAnimationNone];
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    statusBar.hidden = hidden;
 }
 
 #pragma mark - 设置tabbar颜色
@@ -145,7 +143,6 @@ UIColor* cl_tintColor(id self, SEL _cmd) {
 
 @end
 
-/*
 @interface UIViewController (StatusBarColor)
 @end
 @interface UINavigationController (StatusBarColor)
@@ -172,4 +169,3 @@ UIColor* cl_tintColor(id self, SEL _cmd) {
 }
 
 @end
-*/

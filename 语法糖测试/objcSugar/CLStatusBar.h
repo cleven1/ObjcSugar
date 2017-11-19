@@ -31,6 +31,6 @@
 
  @param color 要更改的颜色
  */
-//+ (void)updateStatusbarIconColor:(UIColor *)color;
++ (void)updateStatusbarIconColor:(UIColor *)color;
 
 @end

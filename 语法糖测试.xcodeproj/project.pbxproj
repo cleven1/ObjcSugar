@@ -471,11 +471,8 @@
 		DF6BC76E1DC8BDC100CF1C64 /* UILabel+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7571DC8BDC100CF1C64 /* UILabel+CLObjcSugar.m */; };
 		DF6BC76F1DC8BDC100CF1C64 /* UINavigationController+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7591DC8BDC100CF1C64 /* UINavigationController+CLObjcSugar.m */; };
 		DF6BC7701DC8BDC100CF1C64 /* UIScreen+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC75B1DC8BDC100CF1C64 /* UIScreen+CLObjcSugar.m */; };
-		DF6BC7711DC8BDC100CF1C64 /* UITextField+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC75D1DC8BDC100CF1C64 /* UITextField+CLObjcSugar.m */; };
 		DF6BC7721DC8BDC100CF1C64 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC75F1DC8BDC100CF1C64 /* UITextView+Placeholder.m */; };
-		DF6BC7731DC8BDC100CF1C64 /* UIView+CLObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6BC7611DC8BDC100CF1C64 /* UIView+CLObjcSugar.m */; };
 		DF70FD8B1E0A838D00AC3666 /* NSString+NSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DF70FD8A1E0A838D00AC3666 /* NSString+NSNumber.m */; };
-		DF74CCF21E1612BE000BA075 /* NSFileManager+JKPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74CCF11E1612BE000BA075 /* NSFileManager+JKPaths.m */; };
 		DFB6BB401F10BA3E0039BDB8 /* YLLocationCaluate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6BB3D1F10BA3E0039BDB8 /* YLLocationCaluate.m */; };
 		DFB6BB411F10BA3E0039BDB8 /* YLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6BB3F1F10BA3E0039BDB8 /* YLLocationManager.m */; };
 		DFB6BB451F10BA900039BDB8 /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6BB441F10BA900039BDB8 /* UIView+Helpers.m */; };
@@ -1186,6 +1183,20 @@
 		DF388A2E1E8F72C900261F6A /* WebView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+Debug.h"; sourceTree = "<group>"; };
 		DF388A2F1E8F72C900261F6A /* WebView+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+Debug.m"; sourceTree = "<group>"; };
 		DF388A301E8F72C900261F6A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF592C481FC1641300814FE9 /* CLFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLFileManager.h; sourceTree = "<group>"; };
+		DF592C491FC1641300814FE9 /* CLFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLFileManager.m; sourceTree = "<group>"; };
+		DF592C4A1FC1642D00814FE9 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "语法糖测试/objcSugar/UIView+Extension.h"; sourceTree = SOURCE_ROOT; };
+		DF592C4B1FC1642D00814FE9 /* CDALaunchAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDALaunchAdManager.h; path = "语法糖测试/objcSugar/CDALaunchAdManager.h"; sourceTree = SOURCE_ROOT; };
+		DF592C4C1FC1642D00814FE9 /* UINavigationBar+CDACustomHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+CDACustomHeight.h"; path = "语法糖测试/objcSugar/UINavigationBar+CDACustomHeight.h"; sourceTree = SOURCE_ROOT; };
+		DF592C4D1FC1642D00814FE9 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "语法糖测试/objcSugar/UIView+Extension.m"; sourceTree = SOURCE_ROOT; };
+		DF592C4E1FC1642E00814FE9 /* UINavigationBar+CDACustomHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+CDACustomHeight.m"; path = "语法糖测试/objcSugar/UINavigationBar+CDACustomHeight.m"; sourceTree = SOURCE_ROOT; };
+		DF592C4F1FC1642E00814FE9 /* UIApplication+Visible.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Visible.m"; path = "语法糖测试/objcSugar/UIApplication+Visible.m"; sourceTree = SOURCE_ROOT; };
+		DF592C501FC1642E00814FE9 /* NSString+Substring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+Substring.m"; path = "语法糖测试/objcSugar/NSString+Substring.m"; sourceTree = SOURCE_ROOT; };
+		DF592C511FC1642E00814FE9 /* NSString+Substring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+Substring.h"; path = "语法糖测试/objcSugar/NSString+Substring.h"; sourceTree = SOURCE_ROOT; };
+		DF592C521FC1642E00814FE9 /* CDALaunchAdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDALaunchAdManager.m; path = "语法糖测试/objcSugar/CDALaunchAdManager.m"; sourceTree = SOURCE_ROOT; };
+		DF592C531FC1642E00814FE9 /* socketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = socketManager.m; path = "语法糖测试/objcSugar/socketManager.m"; sourceTree = SOURCE_ROOT; };
+		DF592C541FC1642E00814FE9 /* socketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = socketManager.h; path = "语法糖测试/objcSugar/socketManager.h"; sourceTree = SOURCE_ROOT; };
+		DF592C551FC1642E00814FE9 /* UIApplication+Visible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Visible.h"; path = "语法糖测试/objcSugar/UIApplication+Visible.h"; sourceTree = SOURCE_ROOT; };
 		DF5BF6FA1DC0A6FA009FE851 /* 语法糖测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "语法糖测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5BF6FE1DC0A6FA009FE851 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF5BF7001DC0A6FA009FE851 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1357,16 +1368,37 @@
 		DF6BC7591DC8BDC100CF1C64 /* UINavigationController+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CLObjcSugar.m"; sourceTree = "<group>"; };
 		DF6BC75A1DC8BDC100CF1C64 /* UIScreen+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CLObjcSugar.h"; sourceTree = "<group>"; };
 		DF6BC75B1DC8BDC100CF1C64 /* UIScreen+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CLObjcSugar.m"; sourceTree = "<group>"; };
-		DF6BC75C1DC8BDC100CF1C64 /* UITextField+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CLObjcSugar.h"; sourceTree = "<group>"; };
-		DF6BC75D1DC8BDC100CF1C64 /* UITextField+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CLObjcSugar.m"; sourceTree = "<group>"; };
 		DF6BC75E1DC8BDC100CF1C64 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		DF6BC75F1DC8BDC100CF1C64 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
-		DF6BC7601DC8BDC100CF1C64 /* UIView+CLObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLObjcSugar.h"; sourceTree = "<group>"; };
-		DF6BC7611DC8BDC100CF1C64 /* UIView+CLObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLObjcSugar.m"; sourceTree = "<group>"; };
 		DF70FD891E0A838D00AC3666 /* NSString+NSNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSNumber.h"; sourceTree = "<group>"; };
 		DF70FD8A1E0A838D00AC3666 /* NSString+NSNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSNumber.m"; sourceTree = "<group>"; };
-		DF74CCF01E1612BE000BA075 /* NSFileManager+JKPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+JKPaths.h"; sourceTree = "<group>"; };
-		DF74CCF11E1612BE000BA075 /* NSFileManager+JKPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+JKPaths.m"; sourceTree = "<group>"; };
+		DF8FA1981FC161D7009D9127 /* NSString+CDAExtend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+CDAExtend.h"; path = "语法糖测试/objcSugar/NSString+CDAExtend.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1991FC161D7009D9127 /* CDAReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDAReachability.h; path = "语法糖测试/objcSugar/CDAReachability.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA19A1FC161D7009D9127 /* CLStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLStatusBar.m; path = "语法糖测试/objcSugar/CLStatusBar.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA19B1FC161D7009D9127 /* CLFPSStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLFPSStatus.h; path = "语法糖测试/objcSugar/CLFPSStatus.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA19C1FC161D7009D9127 /* NSTimer+MAC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+MAC.m"; path = "语法糖测试/objcSugar/NSTimer+MAC.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA19D1FC161D7009D9127 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Awesome.m"; path = "语法糖测试/objcSugar/UINavigationBar+Awesome.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA19E1FC161D7009D9127 /* UIButton+titlePostion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIButton+titlePostion.h"; path = "语法糖测试/objcSugar/UIButton+titlePostion.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA19F1FC161D7009D9127 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "语法糖测试/objcSugar/UIImage+ImageEffects.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A01FC161D8009D9127 /* CLFPSStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLFPSStatus.m; path = "语法糖测试/objcSugar/CLFPSStatus.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A11FC161D8009D9127 /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+frame.m"; path = "语法糖测试/objcSugar/UIView+frame.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A21FC161D8009D9127 /* UIImagePickerController+Orientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+Orientation.h"; path = "语法糖测试/objcSugar/UIImagePickerController+Orientation.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A31FC161D8009D9127 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+frame.h"; path = "语法糖测试/objcSugar/UIView+frame.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A41FC161D8009D9127 /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "语法糖测试/objcSugar/UIImage+Extension.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A51FC161D8009D9127 /* NSString+CDAExtend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+CDAExtend.m"; path = "语法糖测试/objcSugar/NSString+CDAExtend.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A61FC161D8009D9127 /* UIView+cornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+cornerRadius.h"; path = "语法糖测试/objcSugar/UIView+cornerRadius.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A71FC161D8009D9127 /* UIView+cornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+cornerRadius.m"; path = "语法糖测试/objcSugar/UIView+cornerRadius.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A81FC161D8009D9127 /* NSTimer+MAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSTimer+MAC.h"; path = "语法糖测试/objcSugar/NSTimer+MAC.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1A91FC161D8009D9127 /* CLStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLStatusBar.h; path = "语法糖测试/objcSugar/CLStatusBar.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1AA1FC161D8009D9127 /* CDAReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDAReachability.m; path = "语法糖测试/objcSugar/CDAReachability.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1AB1FC161D9009D9127 /* CDAUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDAUtils.m; path = "语法糖测试/objcSugar/CDAUtils.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1AC1FC161D9009D9127 /* UIButton+titlePostion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIButton+titlePostion.m"; path = "语法糖测试/objcSugar/UIButton+titlePostion.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1AD1FC161D9009D9127 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Awesome.h"; path = "语法糖测试/objcSugar/UINavigationBar+Awesome.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1AE1FC161D9009D9127 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "语法糖测试/objcSugar/UIImage+ImageEffects.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1AF1FC161D9009D9127 /* CDAStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDAStatusBar.m; path = "语法糖测试/objcSugar/CDAStatusBar.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1B01FC161D9009D9127 /* CDAUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDAUtils.h; path = "语法糖测试/objcSugar/CDAUtils.h"; sourceTree = SOURCE_ROOT; };
+		DF8FA1B11FC161D9009D9127 /* UIImagePickerController+Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+Orientation.m"; path = "语法糖测试/objcSugar/UIImagePickerController+Orientation.m"; sourceTree = SOURCE_ROOT; };
+		DF8FA1B21FC161D9009D9127 /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "语法糖测试/objcSugar/UIImage+Extension.m"; sourceTree = SOURCE_ROOT; };
 		DF9FB0191E1F593500E0E9F7 /* 语法糖测试.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "语法糖测试.entitlements"; sourceTree = "<group>"; };
 		DFB6BB3C1F10BA3E0039BDB8 /* YLLocationCaluate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLocationCaluate.h; sourceTree = "<group>"; };
 		DFB6BB3D1F10BA3E0039BDB8 /* YLLocationCaluate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLocationCaluate.m; sourceTree = "<group>"; };
@@ -3602,6 +3634,45 @@
 		DF6BC73C1DC8BDC100CF1C64 /* ObjcSugar */ = {
 			isa = PBXGroup;
 			children = (
+				DF592C4B1FC1642D00814FE9 /* CDALaunchAdManager.h */,
+				DF592C521FC1642E00814FE9 /* CDALaunchAdManager.m */,
+				DF592C511FC1642E00814FE9 /* NSString+Substring.h */,
+				DF592C501FC1642E00814FE9 /* NSString+Substring.m */,
+				DF592C541FC1642E00814FE9 /* socketManager.h */,
+				DF592C531FC1642E00814FE9 /* socketManager.m */,
+				DF592C551FC1642E00814FE9 /* UIApplication+Visible.h */,
+				DF592C4F1FC1642E00814FE9 /* UIApplication+Visible.m */,
+				DF592C4C1FC1642D00814FE9 /* UINavigationBar+CDACustomHeight.h */,
+				DF592C4E1FC1642E00814FE9 /* UINavigationBar+CDACustomHeight.m */,
+				DF592C4A1FC1642D00814FE9 /* UIView+Extension.h */,
+				DF592C4D1FC1642D00814FE9 /* UIView+Extension.m */,
+				DF8FA1991FC161D7009D9127 /* CDAReachability.h */,
+				DF8FA1AA1FC161D8009D9127 /* CDAReachability.m */,
+				DF8FA1AF1FC161D9009D9127 /* CDAStatusBar.m */,
+				DF8FA1B01FC161D9009D9127 /* CDAUtils.h */,
+				DF8FA1AB1FC161D9009D9127 /* CDAUtils.m */,
+				DF8FA19B1FC161D7009D9127 /* CLFPSStatus.h */,
+				DF8FA1A01FC161D8009D9127 /* CLFPSStatus.m */,
+				DF8FA1A91FC161D8009D9127 /* CLStatusBar.h */,
+				DF8FA19A1FC161D7009D9127 /* CLStatusBar.m */,
+				DF8FA1981FC161D7009D9127 /* NSString+CDAExtend.h */,
+				DF8FA1A51FC161D8009D9127 /* NSString+CDAExtend.m */,
+				DF8FA1A81FC161D8009D9127 /* NSTimer+MAC.h */,
+				DF8FA19C1FC161D7009D9127 /* NSTimer+MAC.m */,
+				DF8FA19E1FC161D7009D9127 /* UIButton+titlePostion.h */,
+				DF8FA1AC1FC161D9009D9127 /* UIButton+titlePostion.m */,
+				DF8FA1A41FC161D8009D9127 /* UIImage+Extension.h */,
+				DF8FA1B21FC161D9009D9127 /* UIImage+Extension.m */,
+				DF8FA19F1FC161D7009D9127 /* UIImage+ImageEffects.h */,
+				DF8FA1AE1FC161D9009D9127 /* UIImage+ImageEffects.m */,
+				DF8FA1A21FC161D8009D9127 /* UIImagePickerController+Orientation.h */,
+				DF8FA1B11FC161D9009D9127 /* UIImagePickerController+Orientation.m */,
+				DF8FA1AD1FC161D9009D9127 /* UINavigationBar+Awesome.h */,
+				DF8FA19D1FC161D7009D9127 /* UINavigationBar+Awesome.m */,
+				DF8FA1A61FC161D8009D9127 /* UIView+cornerRadius.h */,
+				DF8FA1A71FC161D8009D9127 /* UIView+cornerRadius.m */,
+				DF8FA1A31FC161D8009D9127 /* UIView+frame.h */,
+				DF8FA1A11FC161D8009D9127 /* UIView+frame.m */,
 				DF15DD3F1E515627001D8713 /* UIDevice+CL.h */,
 				DF15DD401E515627001D8713 /* UIDevice+CL.m */,
 				DF6BC73D1DC8BDC100CF1C64 /* CLObjcSugar.h */,
@@ -3637,12 +3708,8 @@
 				DF6BC7591DC8BDC100CF1C64 /* UINavigationController+CLObjcSugar.m */,
 				DF6BC75A1DC8BDC100CF1C64 /* UIScreen+CLObjcSugar.h */,
 				DF6BC75B1DC8BDC100CF1C64 /* UIScreen+CLObjcSugar.m */,
-				DF6BC75C1DC8BDC100CF1C64 /* UITextField+CLObjcSugar.h */,
-				DF6BC75D1DC8BDC100CF1C64 /* UITextField+CLObjcSugar.m */,
 				DF6BC75E1DC8BDC100CF1C64 /* UITextView+Placeholder.h */,
 				DF6BC75F1DC8BDC100CF1C64 /* UITextView+Placeholder.m */,
-				DF6BC7601DC8BDC100CF1C64 /* UIView+CLObjcSugar.h */,
-				DF6BC7611DC8BDC100CF1C64 /* UIView+CLObjcSugar.m */,
 			);
 			path = ObjcSugar;
 			sourceTree = "<group>";
@@ -3650,8 +3717,8 @@
 		DF74CCEF1E1612BE000BA075 /* NSFileManager */ = {
 			isa = PBXGroup;
 			children = (
-				DF74CCF01E1612BE000BA075 /* NSFileManager+JKPaths.h */,
-				DF74CCF11E1612BE000BA075 /* NSFileManager+JKPaths.m */,
+				DF592C481FC1641300814FE9 /* CLFileManager.h */,
+				DF592C491FC1641300814FE9 /* CLFileManager.m */,
 			);
 			path = NSFileManager;
 			sourceTree = "<group>";
@@ -3860,7 +3927,6 @@
 				DF388B961E8F72CB00261F6A /* CLLocationManager+Blocks.m in Sources */,
 				DF388B061E8F72CA00261F6A /* NSTimer+JKAddition.m in Sources */,
 				DF388B381E8F72CA00261F6A /* UIFont+JKDynamicFontControl.m in Sources */,
-				DF74CCF21E1612BE000BA075 /* NSFileManager+JKPaths.m in Sources */,
 				DF5BF7F21DC0B4E5009FE851 /* UIView+BlockGesture.m in Sources */,
 				DF388B441E8F72CA00261F6A /* UIImage+JKOrientation.m in Sources */,
 				DF388B021E8F72CA00261F6A /* NSString+JKTrims.m in Sources */,
@@ -3936,7 +4002,6 @@
 				DF388A3F1E8F72C900261F6A /* NSArrayDemoViewController.m in Sources */,
 				DF388A641E8F72C900261F6A /* NSStringDemoViewController.m in Sources */,
 				DF388B531E8F72CA00261F6A /* UILabel+JKSuggestSize.m in Sources */,
-				DF6BC7711DC8BDC100CF1C64 /* UITextField+CLObjcSugar.m in Sources */,
 				DF6BC7671DC8BDC100CF1C64 /* NSObject+GCD.m in Sources */,
 				DF6BC7661DC8BDC100CF1C64 /* NSDictionary+MAC.m in Sources */,
 				DF1100A21DC727840003EEA5 /* UIImage+Extension.m in Sources */,
@@ -4002,7 +4067,6 @@
 				DF388A3D1E8F72C900261F6A /* CLLocationManagerDemoViewController.m in Sources */,
 				DF5BF7F01DC0B4E5009FE851 /* UIView+EAFeatureGuideView.m in Sources */,
 				DF388B031E8F72CA00261F6A /* NSString+JKURLEncode.m in Sources */,
-				DF6BC7731DC8BDC100CF1C64 /* UIView+CLObjcSugar.m in Sources */,
 				DF388B1B1E8F72CA00261F6A /* UIApplication+JKNetworkActivityIndicator.m in Sources */,
 				DF388AE01E8F72C900261F6A /* NSNotificationCenter+JKMainThread.m in Sources */,
 				DF388B271E8F72CA00261F6A /* UIButton+JKCountDown.m in Sources */,
